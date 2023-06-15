@@ -1,5 +1,99 @@
+/* Variables */
+:root {
+    --color-1:
+    --color-2:
+    --color-3:
+}
+
+/* Tag selectors */
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    border: 1px dashed red;
+}
+
+main {
+    overflow: auto;
+}
+
+/* Utility classes */
+
+.flexbox-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexbox-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.grown {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.no-shrink {
+    flex-shrink: 0;
+}
+
+/* Other selectors */
+
+#nav-bottom {
+    height: 10vh;
+
+    background-color: aqua;
+}
+
+#nav-left {
+    width: 200px;
+
+    background-color: blueviolet;
+}
+
+#nav-top {
+    height: 10vh;
+
+    background-color: chartreuse;
+}
+
+
+
+
+
+
+/* GARBAGE SELECTORS, DELETE AT THE END */
+
+body > .grown {
+    background-color: cadetblue;
+}
+
+body > .grown > .grown {
+    background-color: blue;
+}
+
+body > .grown > .grown > .grown {
+    background-color: chocolate;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1100px) {
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    
 }
