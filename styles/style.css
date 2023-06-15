@@ -8,6 +8,8 @@
 /* Tag selectors */
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
     height: 100vh;
     overflow: hidden;
 }
@@ -45,10 +47,20 @@ main {
     flex-shrink: 0;
 }
 
+.btn {
+    color: #FFFFFF;
+    font-size: inherit;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 25px;
+    align-self: center;
+    background-color: #090B12;
+}
+
 /* Other selectors */
 
 #nav-bottom {
-    height: 10vh;
+    height: 8vh;
 
     background-color: aqua;
 }
@@ -60,7 +72,8 @@ main {
 }
 
 #nav-top {
-    height: 10vh;
+    height: 8vh;
+    justify-content: flex-end;
 
     background-color: chartreuse;
 }
