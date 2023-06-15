@@ -22,6 +22,10 @@ body {
     border: 1px dashed red;
 }
 
+img {
+    max-width: 100%;
+}
+
 main {
     overflow: auto;
 }
@@ -67,6 +71,10 @@ main {
 
 #nav-left {
     width: 200px;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
 
     background-color: blueviolet;
 }
