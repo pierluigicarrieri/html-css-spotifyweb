@@ -78,6 +78,11 @@ main {
     background-color: chartreuse;
 }
 
+#nav-top button:hover {
+    font-size: 13px;
+    padding: 0.7rem 1.8rem;
+}
+
 
 
 
