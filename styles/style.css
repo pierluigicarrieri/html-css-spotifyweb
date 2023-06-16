@@ -1,8 +1,14 @@
 /* Variables */
 :root {
-    --color-1:
-    --color-2:
-    --color-3:
+    --color-1: #FFFFFF;
+    --color-2: #797D81;
+    --color-3: #090B12;
+    --color-4: #141922;
+    --color-7: #ADFE2E;
+    --padding-1: 0.2rem 0;
+    --padding-2: 1rem;
+    --gap-1: 1rem;
+    --gap-2: 0.5rem;
 }
 
 /* Tag selectors */
@@ -31,7 +37,9 @@ ul {
 }
 
 main {
+    padding: var(--padding-2);
     overflow: auto;
+    background-color: var(--color-4);
 }
 
 /* Utility classes */
@@ -62,7 +70,7 @@ main {
     border: 1px solid #FFFFFF;
     border-radius: 25px;
     align-self: center;
-    background-color: #090B12;
+    background-color: var(--color-3);
 }
 
 /* Other selectors */
@@ -86,14 +94,76 @@ main {
 #nav-top {
     height: 8vh;
     justify-content: flex-end;
-
-    background-color: chartreuse;
+    background-color: var(--color-3);
 }
 
 #nav-top button:hover {
     font-size: 13px;
     padding: 0.7rem 1.8rem;
 }
+
+#nav-main {
+    max-width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.nav-main-link-container > a {
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+.nav-main-link-container > div {
+    width: 40%;
+    margin: auto;
+    background-color: var(--color-4);
+}
+
+.nav-main-link-container:hover > div {
+    background-color: var(--color-7);
+}
+
+.title {
+    font-size: 18px;
+    color: var(--color-1);
+    padding: var(--padding-1);
+}
+
+.subtitle {
+    color: var(--color-2);
+    padding: var(--padding-1);
+}
+
+.row {
+    padding: var(--padding-1);
+    gap: var(--gap-1);
+    flex-basis: 0;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: calc((100% / 6) - var(--gap-1));
+}
+
+.card > img {
+    max-width: 100%;
+    
+}
+
+.song {
+    font-size: 13px;
+    color: var(--color-1);
+    text-align: center;
+    padding: var(--padding-1)
+}
+
+.artist {
+    color: var(--color-2);
+    text-align: center;
+    padding: var(--padding-1)
+}
+
+
 
 
 
@@ -110,9 +180,6 @@ body > .grown > .grown {
     background-color: blue;
 }
 
-body > .grown > .grown > .grown {
-    background-color: chocolate;
-}
 
 
 
@@ -123,10 +190,26 @@ body > .grown > .grown > .grown {
 /* Media queries */
 
 @media screen and (max-width: 1100px) {
+
+    .row {
+        gap: var(--gap-2);
+    }
+
+    .col {
+        flex-basis: calc((100% / 4) - var(--gap-2));
+    }
     
 }
 
 @media screen and (max-width: 700px) {
+
+    .row {
+        gap: var(--gap-2);
+    }
+
+    .col {
+        flex-basis: calc((100% / 2) - var(--gap-2));
+    }
     
 }
 
@@ -134,6 +217,18 @@ body > .grown > .grown > .grown {
 
     #nav-left {
         width: 50px;
+    }
+
+    #nav-left:hover {
+        width: 200px;
+    }
+
+    .row {
+        gap: var(--gap-2);
+    }
+
+    .col {
+        flex-basis: calc((100% / 2) - var(--gap-2));
     }
     
 }
