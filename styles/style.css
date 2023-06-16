@@ -5,6 +5,7 @@
     --color-3: #090B12;
     --color-4: #141922;
     --color-5: #000000;
+    --color-6: #383838;
     --color-7: #ADFE2E;
     --padding-1: 0.2rem 0;
     --padding-2: 1rem;
@@ -28,7 +29,7 @@ body {
     margin: 0;
     box-sizing: border-box;
 
-    /* border: 1px dashed red; */
+    border: 1px dashed red;
 }
 
 img {
@@ -82,9 +83,40 @@ main {
 
 #nav-bottom {
     height: 8vh;
-
-    background-color: aqua;
+    padding: 0.5rem;
+    flex-basis: 0;
+    justify-content: space-between;
+    background-color: #383838;
 }
+
+#song-box > div {
+    justify-content: center;
+}
+
+#song-box-artist {
+    color: var(--color-1);
+}
+
+#song-box-song {
+    color: var(--color-2);
+}
+
+#nav-bottom-left > div:last-child {
+    margin-left: -200px;
+    align-items: center;
+}
+
+#nav-bottom-left i {
+    padding: var(--padding-4);
+    color: var(--color-2);
+}
+
+
+
+
+
+
+
 
 /* Left bar */
 
