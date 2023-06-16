@@ -13,47 +13,108 @@
 
     <div class="grown flexbox-row">
 
-        <nav id="nav-left" class="no-shrink">
+        <nav id="nav-left" class="flexbox-col no-shrink">
 
-            <img src="img/logo.svg" alt="logo-big">
+            <img src="img/logo.svg" alt="logo-big" class="disappear">
+            <img src="img/logo-small.svg" alt="logo-small">
 
-            <ul>
+            <ul id="nav-left-top">
                 <li>
-                    <a href="#">
-                        <svg></svg>
-                        <div></div>
+                    <a href="#" class="flexbox-row">
+                        <img src="img/home.svg" alt="Home">
+                        <div class="disappear">Home</div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <svg></svg>
-                        <div></div>
+                    <a href="#" class="flexbox-row">
+                        <img src="img/search.svg" alt="Search">
+                        <div class="disappear">Cerca</div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <svg></svg>
-                        <div></div>
+                    <a href="#" class="flexbox-row">
+                        <img src="img/libreria.svg" alt="Library">
+                        <div class="disappear">La tua libreria</div>
                     </a>
                 </li>
             </ul>
 
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
+            <div id="nav-left-mid" class="grown disappear">
+                <a href="#"><b>PLAYLIST</b></a>
+                <div id="create-playlist" class="flexbox-row">
+                    <div class="btn-nav-mid"><b>+</b></div>
+                    <a href="#">Crea Playlist</a>
+                </div>
+                <ul>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                </ul>
 
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
+            </div>
+
+            <div id="nav-left-bottom">
+
+                <div class="flexbox-row">
+                    <div class="btn-nav-bottom"></div>
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <div class="disappear">Installa app</div>
+                </div>
+
+                <div></div>
+
+                <div class="flexbox-row">
+                    <img src="img/profile.svg" alt="profile">
+                    <div class="disappear"><b>John Doe</b></div>
+                </div>
+
+            </div>
 
         </nav>
 
@@ -69,32 +130,32 @@
 
                 <nav id="nav-main" class="flexbox-row">
 
-                    <div class="nav-main-link-container">
+                    <div class="nav-main-link-container flexbox-col">
                         <a href="#"><b>IN EVIDENZA</b></a>
                         <div></div>
                     </div>
 
-                    <div class="nav-main-link-container">
+                    <div class="nav-main-link-container flexbox-col">
                         <a href="#"><b>PODCAST</b></a>
                         <div></div>    
                     </div>
 
-                    <div class="nav-main-link-container">
+                    <div class="nav-main-link-container flexbox-col">
                         <a href="#"><b>CLASSIFICHE</b></a>
                         <div></div>
                     </div>
 
-                    <div class="nav-main-link-container">
+                    <div class="nav-main-link-container flexbox-col">
                         <a href="#"><b>GENERI E MOOD</b></a>
                         <div></div>
                     </div>
 
-                    <div class="nav-main-link-container">
+                    <div class="nav-main-link-container flexbox-col">
                         <a href=""><b>NUOVE USCITE</b></a>
                         <div></div>
                     </div>
 
-                    <div class="nav-main-link-container">
+                    <div class="nav-main-link-container flexbox-col">
                         <a href="#"><b>SCOPRI</b></a>
                         <div></div>
                     </div>

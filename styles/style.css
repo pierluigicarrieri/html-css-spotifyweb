@@ -28,7 +28,7 @@ body {
     margin: 0;
     box-sizing: border-box;
 
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
 }
 
 img {
@@ -113,6 +113,12 @@ and create hover effect */
     text-decoration: none;
     color: var(--color-2);
     align-items: center;
+}
+
+/* Hidden small logo, appears on last query */
+
+#nav-left > img:nth-child(2) {
+    display: none;
 }
 
 #nav-left-top img, 
@@ -210,6 +216,10 @@ and create hover effect */
     flex-basis: 0;
 }
 
+.nav-main-link-container {
+    align-items: center;
+}
+
 .nav-main-link-container > a {
     text-decoration: none;
     color: var(--color-2);
@@ -217,8 +227,8 @@ and create hover effect */
 
 .nav-main-link-container > div {
     width: 40%;
+    height: 2px;
     margin: auto;
-    background-color: var(--color-4);
 }
 
 .nav-main-link-container:hover > div {
@@ -312,12 +322,33 @@ and create hover effect */
 
 @media screen and (max-width: 600px) {
 
+    /* Left bar behaviour changes */
+
     #nav-left {
         width: 50px;
+        padding: 0;
+        align-items: center;
     }
 
-    #nav-left:hover {
-        width: 200px;
+    #nav-left > img, 
+    #nav-left-top > li, 
+    #nav-left-mid > a, 
+    #nav-left-mid > div, 
+    #nav-left-mid > ul > li > a,
+    #nav-left-bottom > div {
+    padding: var(--padding-1);
+    }
+
+    #nav-left-bottom {
+        margin-top: auto;
+    }
+
+    .disappear {
+        display: none;
+    }
+
+    #nav-left > img:nth-child(2) {
+        display: block;
     }
 
     .row {
