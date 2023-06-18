@@ -11,6 +11,7 @@
     --padding-2: 1rem;
     --padding-3: 0.5rem 0;
     --padding-4: 0 0.4rem;
+    --padding-5: 0 0.8rem;
     --gap-1: 1rem;
     --gap-2: 0.5rem;
 }
@@ -28,8 +29,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-    border: 1px dashed red;
 }
 
 img {
@@ -89,8 +88,14 @@ main {
     background-color: #383838;
 }
 
+/* Bottom bar, left side */
+
 #song-box > div {
     justify-content: center;
+}
+
+#song-box > img {
+    margin-right: 0.5rem;
 }
 
 #song-box-artist {
@@ -103,20 +108,72 @@ main {
 
 #nav-bottom-left > div:last-child {
     margin-left: -200px;
-    align-items: center;
+    justify-content: center;
 }
 
 #nav-bottom-left i {
-    padding: var(--padding-4);
+    padding: var(--padding-1);
     color: var(--color-2);
+    font-size: 15px;
 }
 
+#nav-bottom-left i:hover {
+    color: var(--color-1);
+}
 
+/* Bottom bar, middle */
 
+#nav-bottom-mid {
+    color: var(--color-1);
+    width: 40%;
+    align-items: center;
+}
 
+#nav-bottom-mid i {
+    padding: var(--padding-5);
+    color: var(--color-1);
+    font-size: 15px;
+}
 
+#nav-bottom-mid i:nth-child(3) {
+    padding: var(--padding-5);
+    color: var(--color-1);
+    font-size: 25px;
+}
 
+#nav-bottom-mid > div:last-child {
+    width: 100%;
+    padding-top: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.soundbar {
+    width: 80%;
+    height: 5px;
+}
+
+.soundbar-left {
+    width: 25%;
+    background-color: var(--color-1);
+}
+
+.soundbar-right {
+    width: 75%;
+    background-color: var(--color-2);
+}
+
+/* Bottom bar, right side */
+
+#nav-bottom-right {
+    width: 15%;
+    color: var(--color-1);
+    align-items: center;
+}
+
+#nav-bottom-right > i {
+    padding: var(--padding-4);
+}
 
 /* Left bar */
 
@@ -226,6 +283,15 @@ and create hover effect */
     background-color: var(--color-2);
 }
 
+/* Next 2 selectors to put white color when hover */
+
+#nav-left-top div:hover,
+#create-playlist > a:hover,
+#nav-left-mid > ul > li > a:hover,
+#nav-left-bottom > div:first-child > div:hover {
+    color: var(--color-1);
+}
+
 /* Top bar */
 
 #nav-top {
@@ -302,6 +368,30 @@ and create hover effect */
     color: var(--color-2);
     text-align: center;
     padding: var(--padding-1)
+}
+
+/* Next 4 selectors to make hover play effects */
+
+.img-container {
+    position: relative;
+}
+
+.card .fa-circle-play {
+    font-size: 50px;
+    color: var(--color-1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.img-container:hover > img {
+    opacity: 0.5;
+}
+
+.img-container:hover > .fa-circle-play {
+    display: block;
 }
 
 
