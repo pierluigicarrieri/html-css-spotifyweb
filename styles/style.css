@@ -78,103 +78,6 @@ main {
 
 /* Other selectors */
 
-/* Bottom bar */
-
-#nav-bottom {
-    height: 8vh;
-    padding: 0.5rem;
-    flex-basis: 0;
-    justify-content: space-between;
-    background-color: #383838;
-}
-
-/* Bottom bar, left side */
-
-#song-box > div {
-    justify-content: center;
-}
-
-#song-box > img {
-    margin-right: 0.5rem;
-}
-
-#song-box-artist {
-    color: var(--color-1);
-}
-
-#song-box-song {
-    color: var(--color-2);
-}
-
-#nav-bottom-left > div:last-child {
-    margin-left: -200px;
-    justify-content: center;
-}
-
-#nav-bottom-left i {
-    padding: var(--padding-1);
-    color: var(--color-2);
-    font-size: 15px;
-}
-
-#nav-bottom-left i:hover {
-    color: var(--color-1);
-}
-
-/* Bottom bar, middle */
-
-#nav-bottom-mid {
-    color: var(--color-1);
-    width: 40%;
-    align-items: center;
-}
-
-#nav-bottom-mid i {
-    padding: var(--padding-5);
-    color: var(--color-1);
-    font-size: 15px;
-}
-
-#nav-bottom-mid i:nth-child(3) {
-    padding: var(--padding-5);
-    color: var(--color-1);
-    font-size: 25px;
-}
-
-#nav-bottom-mid > div:last-child {
-    width: 100%;
-    padding-top: 0.5rem;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.soundbar {
-    width: 80%;
-    height: 5px;
-}
-
-.soundbar-left {
-    width: 25%;
-    background-color: var(--color-1);
-}
-
-.soundbar-right {
-    width: 75%;
-    background-color: var(--color-2);
-}
-
-/* Bottom bar, right side */
-
-#nav-bottom-right {
-    width: 15%;
-    color: var(--color-1);
-    align-items: center;
-}
-
-#nav-bottom-right > i {
-    padding: var(--padding-4);
-}
-
 /* Left bar */
 
 #nav-left {
@@ -185,7 +88,7 @@ main {
     background-color: var(--color-5);
 }
 
-/* Next 2 selectors to put pading on left bar 
+/* Next 2 selectors to put padding on left bar 
 and create hover effect */
 
 #nav-left > img, 
@@ -208,6 +111,7 @@ and create hover effect */
 
 #nav-left > img:nth-child(2) {
     display: none;
+    height: 40px;
 }
 
 #nav-left-top img, 
@@ -216,6 +120,8 @@ and create hover effect */
     height: 25px;
 }
 
+/* Left bar top */
+
 #nav-left-top {
     padding: var(--padding-3);
 }
@@ -223,6 +129,8 @@ and create hover effect */
 #nav-left-top > li:hover {
     border-left: 2px solid var(--color-7);
 }
+
+/* Left bar mid */
 
 #nav-left-mid > a:first-child {
     color: var(--color-1);
@@ -243,6 +151,8 @@ and create hover effect */
 #nav-left-mid > ul > li {
     padding: var(--padding-1);
 }
+
+/* Left bar bottom */
 
 #nav-left-bottom {
     padding-top: 2rem;
@@ -394,7 +304,129 @@ and create hover effect */
     display: block;
 }
 
+/* Bottom bar */
 
+#nav-bottom {
+    height: 8vh;
+    padding: 0.5rem;
+    justify-content: space-between;
+    background-color: #383838;
+}
+
+/* Bottom bar, left side */
+
+#song-box > div {
+    justify-content: center;
+}
+
+#song-box > img {
+    margin-right: 0.5rem;
+}
+
+#song-box-artist {
+    color: var(--color-1);
+}
+
+#song-box-song {
+    color: var(--color-2);
+}
+
+#nav-bottom-left > div:last-child {
+    margin-left: -200px;
+    justify-content: center;
+}
+
+#nav-bottom-left i {
+    padding: var(--padding-1);
+    color: var(--color-2);
+    font-size: 15px;
+}
+
+#nav-bottom-left i:hover {
+    color: var(--color-1);
+}
+
+/* Bottom bar, middle */
+
+#nav-bottom-mid {
+    color: var(--color-1);
+    width: 40%;
+    align-items: center;
+}
+
+#nav-bottom-mid i {
+    padding: var(--padding-5);
+    color: var(--color-1);
+    font-size: 15px;
+}
+
+#nav-bottom-mid i:nth-child(3) {
+    padding: var(--padding-5);
+    color: var(--color-1);
+    font-size: 25px;
+}
+
+#nav-bottom-mid i:nth-child(3):hover {
+    transform: scale(1.3);
+}
+
+#nav-bottom-mid > div:last-child {
+    width: 100%;
+    padding-top: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.soundbar {
+    width: 80%;
+    height: 5px;
+}
+
+.soundbar-left {
+    width: 25%;
+    background-color: var(--color-1);
+}
+
+.soundbar-mid {
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 1px soid black;
+    border-radius: 50%;
+    align-self: center;
+    display: none;
+    background-color: var(--color-1);
+}
+
+.soundbar-right {
+    width: 75%;
+    background-color: var(--color-2);
+}
+
+/* Next 2 selectors to put hover effect on soundbar */
+
+.soundbar:hover > .soundbar-left {
+    background-color: var(--color-7);
+}
+
+.soundbar:hover > .soundbar-mid {
+    display: block;
+}
+
+/* Bottom bar, right side */
+
+#nav-bottom-right {
+    width: 15%;
+    color: var(--color-1);
+    align-items: center;
+}
+
+#nav-bottom-right > i {
+    padding: var(--padding-4);
+}
+
+#nav-bottom-right > .soundbar {
+    min-width: 50px;
+}
 
 
 
@@ -463,6 +495,7 @@ and create hover effect */
 
     #nav-left-bottom {
         margin-top: auto;
+        align-items: center;
     }
 
     .disappear {
